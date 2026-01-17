@@ -26,4 +26,10 @@ jobs:
       env:
         GOOGLE_CLIENT_SECRET_JSON: ${{ secrets.GOOGLE_CLIENT_SECRET_JSON }}
         GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
-      run: python your_script_name.py # আপনার পাইথন ফাইলের নাম দিন
+        BLOG_ID: ${{ secrets.BLOG_ID }}
+        BASE_URL: ${{ secrets.BASE_URL }}
+        API_GOVT_LIST: ${{ secrets.API_GOVT_LIST }}
+        API_PRIVATE_LIST: ${{ secrets.API_PRIVATE_LIST }}
+        API_JOB_DETAILS: ${{ secrets.API_JOB_DETAILS }}
+        PDF_BASE_PATH: "/media/"
+      run: python go-job-test.py
