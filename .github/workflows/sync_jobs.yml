@@ -2,7 +2,7 @@ name: Job Sync
 
 on:
   schedule:
-    - cron: '0 3,13 * * *'
+    - cron: '43 3,13 * * *'
   workflow_dispatch:
 
 jobs:
